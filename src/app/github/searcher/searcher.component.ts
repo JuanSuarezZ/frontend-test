@@ -15,7 +15,7 @@ export class SearcherComponent {
 
     const value = this.txtSearch.nativeElement.value;
 
-    if ( value.trim().length > 4 ) {
+    if ( value.trim().length < 4 ) {
       return;
     }
 

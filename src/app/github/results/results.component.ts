@@ -9,7 +9,7 @@ import { ProfileService } from '../services/service.service';
 export class ResultsComponent {
 
   get results() {
-    return this.profileService.results;
+    return this.profileService.results.slice(0,10);
   }
 
   changeCurrentProfile(profile:Item){

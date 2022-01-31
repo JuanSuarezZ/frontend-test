@@ -52,7 +52,6 @@ export class ProfileService {
         this.results = resp.items;
       },
     );
-    this.results = this.results.splice(0,10);
     for (let i = 0; i < this.results.length; i++) {
 
       if(this.results[i].score > 30){
@@ -62,5 +61,7 @@ export class ProfileService {
         }
       }
     }
+
+    //
   }
 }
